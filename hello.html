@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Request</title>
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+<div id="video-background">
+    <video autoplay muted loop id="background-video">
+        <source src="/Video/welcome.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div id="friend-box">
+    <h1>Hi! 😊 Would you like to be friends with Mohammad Shakib?</h1>
+    <button id="yes-btn">Yes</button>
+    <button id="no-btn">No</button>
+
+    <div id="why-no" style="display: none;">
+        <h2>Why not? 😔</h2>
+        <form id="no-reason-form">
+            <label><input type="radio" name="reason" value="Busy"> I'm too busy</label><br>
+            <label><input type="radio" name="reason" value="Not interested"> Not interested in friendship</label><br>
+            <label><input type="radio" name="reason" value="Already friend"> Already have enough friends</label><br>
+            <label><input type="radio" name="reason" value="Other"> Other</label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="message-box" style="display: none;">
+        <h2 id="message-text"></h2>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
